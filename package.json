@@ -1,12 +1,12 @@
 {
    "name": "starter-template",
    "version": "1.0.0",
-   "description": "This is a template for the AlternateFramework.",
+   "description": "This is a template for the Appstore.",
    "author": "Sebastian Hilton (https://www.sebastianhilton.com)",
    "private": true,
    "scripts": {
       "alternate-commit": "git add . && git commit -m \"ready for update\"",
-      "alternate-update": "git pull \"https://github.com/Meeovi/AlternateCMS-Starter-Template\"",
+      "alternate-update": "git pull \"https://github.com/Meeovi/Appstore\"",
       "build": "nuxt build",
       "dev": "nuxt dev",
       "generate": "nuxt generate",

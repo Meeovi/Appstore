@@ -99,9 +99,9 @@ body {
 #mainSection {
     top: 0px !important;
     position: relative !important;
-    left: 65px;
+    left: 50px;
     width: 100% !important;
-    height: 100vh !important;
+    height: 100% !important;
 }
 
 #mainWebsite {
@@ -239,7 +239,7 @@ body {
 /******************** Sidebar CSS *************/
 
 #sidebarNav {
-    height: 100vh !important;
+    height: 100% !important;
     left: 0px;
     max-width: 100px !important;
     float: left;

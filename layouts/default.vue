@@ -8,7 +8,7 @@
       </template>
 
       <v-app-bar-title><a class="logobrand" href="/app/">
-          <v-icon start icon="fas fa-comments"></v-icon> Meeovi Appstore
+          <v-icon start icon="fas fa-icons"></v-icon> Meeovi Appstore
         </a></v-app-bar-title>
 
       <v-text-field density="compact" variant="solo" label="Search" append-inner-icon="fas fa-search" single-line
@@ -23,7 +23,7 @@
           <v-menu :location="location" transition="slide-y-transition">
             <template v-slot:activator="{ props }">
               <v-btn variant="flat" v-bind="props">
-                <v-icon start icon="fas fa-clock-rotate-left"></v-icon>
+                <v-icon start icon="fas fa-question-circle"></v-icon>
               </v-btn>
             </template>
             <v-list>
@@ -58,15 +58,15 @@
       <v-card>
         <v-layout>
           <v-navigation-drawer v-model="drawer" permanent>
-            <v-list-item prepend-icon="fas fa-users-between-lines" href="/app/crm/"></v-list-item>
-            <v-list-item prepend-icon="fas fa-comments" href="/app/messenger/"></v-list-item>
-            <v-list-item prepend-icon="fas fa-diagram-project" href="/app/projects/"></v-list-item>
-            <v-list-item prepend-icon="fas fa-list" href="/app/lists/"></v-list-item>
+            <v-list-item prepend-icon="fas fa-cubes-stacked" href="/apps/" title="Apps"></v-list-item>
+            <v-list-item prepend-icon="fas fa-mobile-screen-button" href="/app/extensions" title="Extensions"></v-list-item>
             <v-spacer></v-spacer>
 
-            <v-list density="compact" nav>
-              <v-list-item prepend-icon="fas fa-plus" value="Add Channel"></v-list-item>
-            </v-list>
+            <template v-slot:append>
+              <div class="pa-2">
+                <v-btn block icon="fas fa-lines-leaning" variant="text" href="/app/library"></v-btn>
+              </div>
+            </template>
           </v-navigation-drawer>
           <v-main id="sidebarNav"></v-main>
           <main id="mainSection">

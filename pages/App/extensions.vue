@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="appHomepage">
         <section data-bs-version="5.1" class="features7 shopm5 cid-tMEJ3SO4jB" id="afeatures7-7">
 
 
@@ -430,6 +430,6 @@
 
 <script setup>
     useHead({
-        title: 'Meeovi Appstore'
+        title: 'Meeovi Appstore - Extensions'
     })
 </script>
